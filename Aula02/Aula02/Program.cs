@@ -10,7 +10,17 @@ namespace Aula02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            bool completo = false;
+            char genero = 'f';
+            float n1 = 5.0f;
+            string nome = "Maria Jose";
+            object obj1 = "Ana Clara";
+            Console.WriteLine(obj1);
+            Console.WriteLine(completo);
+            Console.WriteLine(genero);
+            Console.WriteLine(n1);
+            Console.WriteLine(nome);
+        
         }
     }
 }
