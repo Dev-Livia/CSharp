@@ -113,3 +113,87 @@ Em C#, conversões entre tipos de dados podem ser feitas de forma **implícita**
    int num = 10;
    double valor = num; // Conversão implícita de int para double
 ```
+## Operadores Aritméticos em C#
+
+Os operadores aritméticos em C# são usados para realizar operações matemáticas básicas, como adição, subtração, multiplicação, divisão e cálculo de resto. Esses operadores podem ser aplicados a tipos numéricos, como `int`, `float`, `double`, entre outros.
+
+### **Operador de Adição (`+`)**
+   - **Descrição**: Soma dois valores.
+   - **Exemplo**:
+     ```csharp
+     int a = 5;
+     int b = 3;
+     int resultado = a + b;  // resultado é 8
+     ```
+
+### **Operador de Subtração (`-`)**
+   - **Descrição**: Subtrai o segundo valor do primeiro.
+   - **Exemplo**:
+     ```csharp
+     int a = 5;
+     int b = 3;
+     int resultado = a - b;  // resultado é 2
+     ```
+
+###**Operador de Multiplicação (`*`)**
+   - **Descrição**: Multiplica dois valores.
+   - **Exemplo**:
+     ```csharp
+     int a = 5;
+     int b = 3;
+     int resultado = a * b;  // resultado é 15
+     ```
+
+### **Operador de Divisão (`/`)**
+   - **Descrição**: Divide o primeiro valor pelo segundo. No caso de divisão entre inteiros, o resultado é um valor inteiro (a parte fracionária é descartada).
+   - **Exemplo**:
+     ```csharp
+     int a = 10;
+     int b = 3;
+     int resultado = a / b;  // resultado é 3 (parte fracionária é descartada)
+
+     double c = 10.0;
+     double d = 3.0;
+     double resultadoComDecimal = c / d;  // resultado é 3.3333...
+     ```
+
+### **Operador de Módulo (`%`)**
+   - **Descrição**: Retorna o resto da divisão do primeiro valor pelo segundo.
+   - **Exemplo**:
+     ```
+     int a = 10;
+     int b = 3;
+     int resto = a % b;  // resto é 1
+     ```
+
+### **Operador de Incremento (`++`)**
+   - **Descrição**: Incrementa o valor da variável em 1. Pode ser usado em forma pós-fixada (`a++`) ou pré-fixada (`++a`).
+   - **Exemplo**:
+     ```
+     int a = 5;
+     a++;  // a agora é 6
+     ```
+
+### **Operador de Decremento (`--`)**
+   - **Descrição**: Decrementa o valor da variável em 1. Pode ser usado em forma pós-fixada (`a--`) ou pré-fixada (`--a`).
+   - **Exemplo**:
+     ```csharp
+     int a = 5;
+     a--;  // a agora é 4
+     ```
+
+### Exemplo de Uso Completo:
+
+```
+int a = 10;
+int b = 3;
+
+int soma = a + b;          // soma é 13
+int subtracao = a - b;     // subtracao é 7
+int multiplicacao = a * b; // multiplicacao é 30
+int divisao = a / b;       // divisao é 3 (divisão inteira)
+int resto = a % b;         // resto é 1
+
+a++;  // a agora é 11
+b--;  // b agora é 2
+```
