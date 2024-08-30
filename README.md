@@ -197,3 +197,17 @@ int resto = a % b;         // resto é 1
 a++;  // a agora é 11
 b--;  // b agora é 2
 ```
+## Entrada de Dados em C#
+
+Em C#, a entrada de dados é frequentemente realizada usando o método `Console.ReadLine()`, que permite ao usuário inserir informações via console. Essas entradas são capturadas como strings e podem ser convertidas para outros tipos de dados conforme necessário.
+
+###  **Método `Console.ReadLine()`**
+   O método `Console.ReadLine()` lê uma linha completa de entrada do usuário até que ele pressione Enter. O valor lido é retornado como uma string.
+
+   **Exemplo:**
+
+   ```
+   Console.WriteLine("Digite seu nome:");
+   string nome = Console.ReadLine();  // Captura a entrada do usuário e armazena na variável 'nome'
+   Console.WriteLine($"Olá, {nome}!");
+```
