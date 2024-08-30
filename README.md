@@ -68,6 +68,19 @@ Em C#, a saída de dados é frequentemente realizada usando o método `Console.W
 
    **Exemplo:**
 
-   ```csharp
+   ```
    Console.WriteLine("Hello, World!");  // Exibe "Hello, World!"
    Console.WriteLine(42);               // Exibe o número 42
+```
+## Operadores de Atribuição em C#
+
+Os operadores de atribuição em C# são usados para atribuir valores a variáveis. O operador de atribuição mais comum é o `=`, mas existem outros operadores que realizam operações adicionais ao mesmo tempo que atribuem valores.
+
+### 1. **Operador de Atribuição Simples (`=`)**
+   O operador `=` atribui o valor do lado direito à variável do lado esquerdo.
+
+   **Exemplo:**
+
+   ```
+   int x = 10;  // Atribui o valor 10 à variável x
+```
