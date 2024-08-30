@@ -84,3 +84,19 @@ Os operadores de atribuição em C# são usados para atribuir valores a variáve
    ```
    int x = 10;  // Atribui o valor 10 à variável x
 ```
+### Exemplo de Atribuição com `a++` e `a--`
+
+Os operadores de incremento (`++`) e decremento (`--`) são utilizados para adicionar ou subtrair `1` ao valor de uma variável. Eles podem ser usados de forma **pós-fixada** (após a variável) ou **pré-fixada** (antes da variável).
+
+#### **Pós-fixado (`a++`, `a--`)**
+   No modo pós-fixado, a variável é usada primeiro, e depois é incrementada ou decrementada.
+
+   **Exemplo:**
+
+   ```
+   int a = 5;
+   int b = a++;  // b recebe o valor 5, e então a é incrementado para 6
+   int c = a--;  // c recebe o valor 6, e então a é decrementado para 5
+
+   Console.WriteLine($"a: {a}, b: {b}, c: {c}");
+```
