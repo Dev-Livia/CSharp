@@ -100,3 +100,16 @@ Os operadores de incremento (`++`) e decremento (`--`) são utilizados para adic
 
    Console.WriteLine($"a: {a}, b: {b}, c: {c}");
 ```
+## Conversão Implícita e Casting em C#
+
+Em C#, conversões entre tipos de dados podem ser feitas de forma **implícita** ou **explícita** (casting). A escolha entre uma e outra depende do tipo de dados envolvidos e do risco de perda de informação.
+
+### 1. **Conversão Implícita**
+   A conversão implícita ocorre automaticamente quando não há risco de perda de dados. Ela é realizada pelo compilador quando um tipo menor é convertido para um tipo maior.
+
+   **Exemplo:**
+
+   ```
+   int num = 10;
+   double valor = num; // Conversão implícita de int para double
+```
