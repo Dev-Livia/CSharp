@@ -41,3 +41,33 @@ bool eEstudante = true;
 char inicial = 'A';
 string nome = "João";
 ```
+## Restrições e Convenções para Nomes em C#
+
+Em C#, a nomeação de variáveis, métodos, classes e outros identificadores deve seguir certas regras e convenções para garantir legibilidade, consistência e evitar erros.
+
+### **Restrições para Nomes**
+   - **Caractere inicial**: Os nomes devem começar com uma letra (`a-z`, `A-Z`) ou um sublinhado (`_`). Números não podem ser usados no início do nome.
+   - **Uso de caracteres especiais**: Além de letras, números e sublinhados, não são permitidos outros caracteres especiais como `@`, `#`, `$`, etc., exceto para prefixar identificadores com o símbolo `@` para evitar conflitos com palavras-chave (por exemplo, `@class`).
+   - **Palavras-chave**: Não é permitido usar palavras reservadas do C# como identificadores (ex.: `int`, `class`, `void`). No entanto, é possível usar o prefixo `@` para contornar isso (ex.: `@int`).
+   - **Comprimento**: Embora não haja um limite estrito no comprimento dos nomes, é recomendado manter os nomes descritivos, porém concisos.
+
+   **Exemplos:**
+
+   ```
+   int _idade;         // Válido
+   string nome1;       // Válido
+   double @class;      // Válido, mas não recomendado
+   int 123numero;      // Inválido, começa com número
+```
+## Saída de Dados em C#
+
+Em C#, a saída de dados é frequentemente realizada usando o método `Console.WriteLine()` para exibir informações no console. Este método é parte da classe `Console`, que fornece diversas funcionalidades para entrada e saída de dados.
+
+### **Método `Console.WriteLine()`**
+   O método `Console.WriteLine()` é utilizado para exibir uma linha de texto no console, seguida por uma nova linha. Ele pode ser usado para exibir variáveis, textos, ou combinações dos dois.
+
+   **Exemplo:**
+
+   ```csharp
+   Console.WriteLine("Hello, World!");  // Exibe "Hello, World!"
+   Console.WriteLine(42);               // Exibe o número 42
