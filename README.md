@@ -211,3 +211,81 @@ Em C#, a entrada de dados é frequentemente realizada usando o método `Console.
    string nome = Console.ReadLine();  // Captura a entrada do usuário e armazena na variável 'nome'
    Console.WriteLine($"Olá, {nome}!");
 ```
+## Operadores Comparativos em C#
+
+Os operadores comparativos em C# são usados para comparar valores. Eles retornam um valor booleano (`true` ou `false`) com base na relação entre os operandos. Esses operadores são frequentemente utilizados em estruturas de controle de fluxo, como condicionais (`if`, `else`) e loops (`while`, `for`).
+
+### **Operador de Igualdade (`==`)**
+   - **Descrição**: Verifica se dois valores são iguais.
+   - **Exemplo**:
+     ```
+     int a = 5;
+     int b = 5;
+     bool resultado = (a == b);  // resultado é true
+     ```
+
+### **Operador de Diferença (`!=`)**
+   - **Descrição**: Verifica se dois valores são diferentes.
+   - **Exemplo**:
+     ```
+     int a = 5;
+     int b = 3;
+     bool resultado = (a != b);  // resultado é true
+     ```
+
+###  **Operador Maior que (`>`)**
+   - **Descrição**: Verifica se o primeiro valor é maior que o segundo.
+   - **Exemplo**:
+     ```
+     int a = 5;
+     int b = 3;
+     bool resultado = (a > b);  // resultado é true
+     ```
+
+###  **Operador Menor que (`<`)**
+   - **Descrição**: Verifica se o primeiro valor é menor que o segundo.
+   - **Exemplo**:
+     ```
+     int a = 5;
+     int b = 7;
+     bool resultado = (a < b);  // resultado é true
+     ```
+
+###  **Operador Maior ou Igual (`>=`)**
+   - **Descrição**: Verifica se o primeiro valor é maior ou igual ao segundo.
+   - **Exemplo**:
+     ```
+     int a = 5;
+     int b = 5;
+     bool resultado = (a >= b);  // resultado é true
+     ```
+
+###  **Operador Menor ou Igual (`<=`)**
+   - **Descrição**: Verifica se o primeiro valor é menor ou igual ao segundo.
+   - **Exemplo**:
+     ```
+     int a = 5;
+     int b = 7;
+     bool resultado = (a <= b);  // resultado é true
+     ```
+
+### Exemplo de Uso Completo:
+
+```
+int a = 10;
+int b = 20;
+
+bool igual = (a == b);         // igual é false
+bool diferente = (a != b);     // diferente é true
+bool maior = (a > b);          // maior é false
+bool menor = (a < b);          // menor é true
+bool maiorOuIgual = (a >= b);  // maiorOuIgual é false
+bool menorOuIgual = (a <= b);  // menorOuIgual é true
+
+Console.WriteLine($"a == b: {igual}");
+Console.WriteLine($"a != b: {diferente}");
+Console.WriteLine($"a > b: {maior}");
+Console.WriteLine($"a < b: {menor}");
+Console.WriteLine($"a >= b: {maiorOuIgual}");
+Console.WriteLine($"a <= b: {menorOuIgual}");
+```
