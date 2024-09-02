@@ -289,3 +289,47 @@ Console.WriteLine($"a < b: {menor}");
 Console.WriteLine($"a >= b: {maiorOuIgual}");
 Console.WriteLine($"a <= b: {menorOuIgual}");
 ```
+## Operadores Lógicos em C#
+
+Os operadores lógicos em C# são utilizados para combinar expressões booleanas ou inverter o valor de uma expressão booleana. Eles são essenciais para criar condições complexas em estruturas de controle de fluxo, como condicionais (`if`, `else`) e loops (`while`, `for`).
+
+### Operadores Lógicos
+
+- **`&&` (AND lógico)**: Retorna `true` se **ambas** as expressões forem verdadeiras.
+  - **Exemplo**:
+    ```csharp
+    bool resultado = (5 > 3) && (10 > 8);  // resultado é true
+    ```
+
+- **`||` (OR lógico)**: Retorna `true` se **pelo menos uma** das expressões for verdadeira.
+  - **Exemplo**:
+    ```csharp
+    bool resultado = (5 > 3) || (10 < 8);  // resultado é true
+    ```
+
+- **`!` (NOT lógico)**: Inverte o valor de uma expressão booleana.
+  - **Exemplo**:
+    ```csharp
+    bool verdadeiro = true;
+    bool resultado = !verdadeiro;  // resultado é false
+    ```
+
+### Exemplo de Uso Completo:
+
+```
+bool condicao1 = (5 > 3);  // true
+bool condicao2 = (10 < 8); // false
+
+// AND lógico - Ambos devem ser verdadeiros
+bool resultadoAnd = condicao1 && condicao2;  // resultadoAnd é false
+
+// OR lógico - Pelo menos um deve ser verdadeiro
+bool resultadoOr = condicao1 || condicao2;   // resultadoOr é true
+
+// NOT lógico - Inverte o valor
+bool resultadoNot = !condicao1;              // resultadoNot é false
+
+Console.WriteLine($"AND lógico: {resultadoAnd}");
+Console.WriteLine($"OR lógico: {resultadoOr}");
+Console.WriteLine($"NOT lógico: {resultadoNot}");
+```
