@@ -27,14 +27,8 @@ namespace Entrada_de_dados_em_C_
             string y = Console.ReadLine();
             string z = Console.ReadLine();
 
-            
-            string[] v = Console.ReadLine().Split(' ');
-            string a = v[0];
-            string b = v[1];
-            string c = v[2];
-
-            Console.WriteLine("Você digitou: ");
-            Console.WriteLine($"{a},{b},{c}");
+            Console.WriteLine("Digite um numero: ");
+            int n1 = int.Parse(Console.ReadLine());
 
         }
     }
